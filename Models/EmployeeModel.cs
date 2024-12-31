@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 using WebApiUsers.Enums;
@@ -7,7 +8,8 @@ using WebApiUsers.Enums;
 namespace WebApiUsers.Models
 {
     public class EmployeeModel
-    {
+    {   
+        [Key]
         public int Id { get; set; }
         public string Name { get; set; }
         public string LastName { get; set; }
